@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #012e8b;
+  --secondary-color: #5c9ccf;
+  --background-color: #e5e5e5;
+  --secondary-bg-color: #6b7280;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+}
+/* App.css */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Full height of the viewport */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  background-color: var(--background-color);
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #012e8b; /* Heading color */
+}

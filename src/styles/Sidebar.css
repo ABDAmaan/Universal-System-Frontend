@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #012e8b;
+  --secondary-color: #5c9ccf;
+  --background-color: #e5e5e5;
+  --secondary-bg-color: #6b7280;
+  --text-color: #fff;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  flex-shrink: 0;
+}
+
+.sidebar-logo img {
+  width: 85%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color); /* Default text color */
+}
+
+.menu-item:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color); /* Hover color */
+  margin-left: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.menu-item.active {
+  background-color: var(--background-color);
+  margin-left: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.menu-item.active .menu-link,
+.menu-item.active .menu-icon {
+  color: var(--primary-color); /* Active link text and icon color */
+}
+
+.menu-icon {
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu-link,
+.submenu-link {
+  text-decoration: none;
+  color: var(--text-color); /* Default text color */
+  flex-grow: 1;
+}
+
+.menu-link:hover,
+.submenu-link:hover {
+  text-decoration: none;
+  color: var(--primary-color); /* Hover text color */
+}
+
+/* Submenu styles for dropdowns */
+.submenu {
+  list-style: none;
+  padding-left: 30px;
+  margin-top: -5px;
+  margin-left: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.submenu-item {
+  padding: 10px 0;
+  color: var(--text-color); /* Default text color for submenu */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submenu-item:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color); /* Hover color */
+  margin-left: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.submenu-item.active .submenu-link,
+.submenu-item.active .menu-icon {
+  color: var(--primary-color); /* Active text and icon color for submenu */
+}
+
+.dropdown-icon {
+  margin-left: auto;
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

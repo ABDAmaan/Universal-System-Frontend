@@ -1,0 +1,99 @@
+/* src/styles/DoctorList.css */
+.doctor-list-container {
+  padding: 20px;
+}
+
+h2 {
+  color: #012e8b;
+  margin-bottom: 20px;
+}
+
+.add-doctor-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-doctor-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #012e8b;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-button {
+  background-color: #5c9ccf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #012e8b;
+}
+
+.doctor-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.doctor-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.doctor-item:hover {
+  background-color: #e0e0e0;
+}
+
+.doctor-name {
+  flex: 1;
+  cursor: pointer;
+  color: #012e8b;
+}
+
+.edit-mode {
+  display: flex;
+  flex: 1;
+}
+
+.edit-mode input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #012e8b;
+  border-radius: 4px;
+}
+
+.save-button {
+  background-color: #5c9ccf;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #012e8b;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
